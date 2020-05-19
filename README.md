@@ -1,8 +1,5 @@
 # kafka-basic-commands
-- To download the file go to the [link](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.5.0/kafka_2.12-2.5.0.tgz) and save the file in c:\ folder
-- Now open the powershell as an administrator and execute the commands
--- ```tar -xzf kafka_2.12-2.5.0.tgz``` this will <b>un-zip the folder</b> and now you can see the extracted <b>kafka_2.12-2.5.0</b> file.
--- ```cd kafka_2.12-2.5.0``` to enter into the folder if required.
+To download the file go to the [link](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.5.0/kafka_2.12-2.5.0.tgz) and save the file in c:\ folder. Now open the powershell as an administrator and execute the commands ```tar -xzf kafka_2.12-2.5.0.tgz```,  this will <b>un-zip the folder</b> and now you can see the extracted <b>kafka_2.12-2.5.0</b> file and use ```cd kafka_2.12-2.5.0``` to enter into the folder if required.
 - To<b> start the zookeeper server</b>, in a new powershell window, enter the command ```.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties``` 
 - To <b>start the kafka server</b>, in a new powershell window, enter the command ```.\bin\windows\kafka-server-start.bat .\config\server.properties```
 - To <b>create a topic</b> in this, open a new powershell and enter the command ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic {topic_name}```
